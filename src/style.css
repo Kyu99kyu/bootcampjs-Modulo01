@@ -93,8 +93,8 @@ h1 {
 }
 
 .circle {
-  width: 60px; /* Ajusta el tamaño del círculo según tus necesidades */
-  height: 60px; /* Ajusta el tamaño del círculo según tus necesidades */
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background-color: white;
   display: flex;

@@ -142,4 +142,7 @@ footer {
   .footerbar {
     font-size: 0.7rem;
   }
+  .circle img {
+    width: 60%;
+  }
 }

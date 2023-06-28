@@ -13,6 +13,8 @@ body {
   align-content: space-around;
   flex-direction: column;
   min-height: 100vh;
+  max-width: 100%;
+  height: auto;
 }
 
 h1 {
@@ -47,11 +49,20 @@ h1 {
 
 .container div img {
   border-radius: 3%;
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
 }
 
 .navbar {
   position: sticky;
-  width: 62.5rem;
+  width: 100%;
   font-size: 1rem;
   padding: var(--containerPadding);
   margin: var(--containerMargin);
@@ -69,8 +80,14 @@ h1 {
   text-decoration: none;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
 .footerbar {
-  width: 62.5rem;
+  width: 100%;
   padding: var(--containerPadding);
   margin: var(--containerMargin);
   font-size: 1rem;
@@ -93,12 +110,36 @@ h1 {
 }
 
 .circle {
-  width: 60px;
-  height: 60px;
+  width: 3.75em;
+  height: 3.75em;
   border-radius: 50%;
   background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
+}
+
+@media (max-width: 958px) {
+  header {
+    width: 100%;
+  }
+  footer {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    width: 100%;
+  }
+  footer {
+    width: 100%;
+  }
+  .navbar {
+    font-size: 0.7rem;
+  }
+  .footerbar {
+    font-size: 0.7rem;
+  }
 }
